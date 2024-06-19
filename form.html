@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h2>Form Member SZA</h2>
+      <form class="form" id="registrationForm">
+        <div class="input-box">
+          <label>Nama Lengkap</label>
+          <input
+            required=""
+            placeholder="Masukkan Nama Lengkap"
+            type="text"
+            id="fullName"
+          />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Nomor HP</label>
+            <input
+              required=""
+              placeholder="Masukkan Nomor HP"
+              type="telephone"
+              id="phoneNumber"
+            />
+          </div>
+          <div class="input-box custom-date-input">
+            <label>Tanggal Lahir</label>
+            <input
+              required=""
+              placeholder="Masukkan Tanggal Lahir"
+              type="date"
+              id="birthDate"
+            />
+          </div>
+        </div>
+        <div class="gender-box">
+          <label>Jenis Kelamin</label>
+          <div class="gender-option">
+            <div class="gender">
+              <input
+                name="gender"
+                id="check-male"
+                type="radio"
+                value="Laki-Laki"
+                checked
+              />
+              <label for="check-male">Laki-Laki</label>
+            </div>
+            <div class="gender">
+              <input
+                name="gender"
+                id="check-female"
+                type="radio"
+                value="Perempuan"
+              />
+              <label for="check-female">Perempuan</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Asal</label>
+          <input
+            required=""
+            placeholder="Masukkan Asal Kota"
+            type="text"
+            id="address"
+          />
+        </div>
+        <div class="input-box album">
+          <label>Album yang disukai</label>
+          <div class="column">
+            <div class="select-box">
+              <select id="album">
+                <option hidden="">Album</option>
+                <option value="Nobody Gets Me">Nobody Gets Me</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Snooze">Snooze</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="submit">KIRIM</button>
+      </form>
+    </section>
+
+    <script src="form.js"></script>
+  </body>
+</html>

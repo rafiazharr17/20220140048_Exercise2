@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SZA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>Solána Imani Rowe</h1>
+    <div class="container">
+      <div class="audio-card">
+        <h2>Sza - Music</h2>
+        <img src="assets/sza.jpg" alt="Cover Audio" />
+        <div class="audio-info">
+          <h3>Saturn</h3>
+          <p>Sza</p>
+          <audio id="audio-player" src="assets/SZA - Saturn.mp3"></audio>
+          <div class="audio-controls">
+            <button id="prev"><i class="fas fa-backward"></i></button>
+            <button id="play-pause"><i class="fas fa-play"></i></button>
+            <button id="next"><i class="fas fa-forward"></i></button>
+          </div>
+          <div class="progress-bar">
+            <span id="current-time">0:00</span>
+            <input type="range" id="seek-bar" value="0" max="100" />
+            <span id="duration">3:07</span>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="card">
+        <h2>Sza - Nobody Gets Me (Video)</h2>
+        <video controls width="600">
+          <source src="assets/SZA - NOBODY GETS ME.mp4" type="video/mp4" />
+          Browser Anda tidak mendukung elemen video.
+        </video>
+      </div>
+
+      <div class="card">
+        <h2>Sza - Album</h2>
+        <div class="cards">
+          <div class="card red">
+            <img src="assets/nobody.jpg" alt="" />
+            <h3>Nobody Gets Me</h3>
+          </div>
+          <div class="card blue">
+            <img src="assets/sza2.jpg" alt="" />
+            <h3>Saturn</h3>
+          </div>
+          <div class="card green">
+            <img src="assets/sza3.jpg" alt="" />
+            <h3>Snooze</h3>
+          </div>
+        </div>
+      </div>
+
+      <button class="shadow__btn"><a href="form.html">SURVEY</a></button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
